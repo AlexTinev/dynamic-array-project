@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
         {
             case PUSH:  t = rand()% 100;
                         push(arr,t);
-                        fprintf(stdout,"item:%d pushed!\n",t);
+                        fprintf(stdout,"item:%d   pushed!\n",t);
                         break;
             case POP:   res = pop(arr,&t);
                         if(res == -1)
