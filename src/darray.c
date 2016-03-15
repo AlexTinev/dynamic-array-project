@@ -48,7 +48,7 @@ Array *createArray()
 void push(Array *arr, int item)
 {
     int *t = NULL;
-    assert(arr != Null);
+    assert(arr);
     t = realloc( arr->items , sizeof *arr->items * arr->count + sizeof item);
     if( t != NULL )
     {
