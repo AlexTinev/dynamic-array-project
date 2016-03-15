@@ -29,10 +29,10 @@ int main(int argc, char** argv) {
     int opt = 0;
     int t,res;
     arr = createArray();
-    assert(arr != NULL);
+    assert(arr);
     while(1)
     {
-        fprintf(stdout, "\n%d-push,%d-pop,%d-unshift,%d-shift,%d-sraightInsert,%d-print,%d-exit:",
+        printf(stdout, "\n%d-push,%d-pop,%d-unshift,%d-shift,%d-sraightInsert,%d-print,%d-exit:",
                             PUSH, POP, UNSHIFT, SHIFT, STRINS, PRINT, EXIT);
         scanf("%d",&opt);
         switch(opt)
