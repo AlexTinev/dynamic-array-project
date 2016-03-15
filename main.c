@@ -42,9 +42,9 @@ int main(int argc, char** argv) {
                         break;
             case POP:   res = pop(arr,&t);
                         if(res == -1)
-                          fprintf(stdout,"The array is empty!");
+                          fprintf(stdout,"The array is empty!     ");
                         else
-                          fprintf(stdout,"item:%d poped!\n ",t);
+                          fprintf(stdout,"item:%d poped!\n    ",t);
                         break;
             case UNSHIFT: t = rand() % 100;
                           unshift(arr,t);
@@ -53,11 +53,11 @@ int main(int argc, char** argv) {
             case SHIFT: res = shift(arr, &t); 
                         if( res != -1)
                           {
-                            fprintf(stdout, "item:%d shifted!\n",t);
+                            fprintf(stdout, "  item:%d shifted!\n",t);
                           }
                         else
                           {
-                            fprintf(stdout, "The array is empty\n");
+                            fprintf(stdout, "The    array is empty\n");
                           }
                         break;
             case STRINS: straightInsertion(arr);
