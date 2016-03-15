@@ -40,7 +40,7 @@ Array *createArray()
     }
     else
     {
-        fprintf( stdout, "Memory allocation error!\n");
+        fprintf( stdout, "  Memory allocation error!\n");
         abort();
     }
     return t;
@@ -58,7 +58,7 @@ void push(Array *arr, int item)
     }
     else
     {
-        fprintf(stdout, "Memory allocation error!\n");
+        fprintf(stdout, "  Memory allocation error!\n");
     }
          
 }
