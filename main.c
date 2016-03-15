@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
     while(1)
     {
         fprintf(stdout, "\n%d-push,%d-pop,%d-unshift,%d-shift,%d-sraightInsert,%d-print,%d-exit:",
-                            PUSH, POP, UNSHIFT, SHIFT, STRINS, PRINT, EXIT);
+                            PUSH, POP, UNSHIFT, STRINS, SHIFT, PRINT, EXIT);
         scanf("%d",&opt);
         switch(opt)
         {
