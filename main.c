@@ -35,18 +35,23 @@ int main(int argc, char** argv) {
         printf(stdout, "\n%d-push,%d-pop,%d-unshift,%d-shift,%d-sraightInsert,%d-print,%d-exit:",
                             PUSH, POP, UNSHIFT, SHIFT, STRINS, PRINT, EXIT);
         scanf("%d",&opt);
-        switch(opt)
-        {
-            case PUSH:  t = rand()% 100;
+        
+
+       if (opt == PUSH)
+               {
+             t = rand()% 100;
                         push(arr,t);
                         fprintf(stdout,"item:%d pushed!\n",t);
-                        break;
-            case POP:   res = pop(arr,&t);
+              }
+            else if (opt == UNSHIFT)
+                {
                         if(res == -1)
                           fprintf(stdout,"The array is empty!     ");
                         else
-                          fprintf(stdout,"item:%d poped!\n    ",t);
-                        break;
+                          fprintf(stdout,"item:%d poped!\n    ",t); 
+             }
+switch(opt)
+        {
             case UNSHIFT: t = rand() % 100;
                           unshift(arr,t);
                           fprintf(stdout,"item:%d unshifted!\n",t);
