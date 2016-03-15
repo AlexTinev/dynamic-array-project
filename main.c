@@ -10,6 +10,7 @@
 #include <assert.h>
 
 #include "inc/darray.h"
+#include "inc/io.h"
 
 /*
  * 
