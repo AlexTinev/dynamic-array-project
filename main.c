@@ -29,8 +29,11 @@ int main(int argc, char** argv) {
     int opt = 0;
     int t,res;
     arr = createArray();
+<<<<<<< HEAD
     assert(arr);
-    while(1)
+=======
+    do
+>>>>>>> origin/master
     {
         printf(stdout, "\n%d-push,%d-pop,%d-unshift,%d-shift,%d-sraightInsert,%d-print,%d-exit:",
                             PUSH, POP, UNSHIFT, SHIFT, STRINS, PRINT, EXIT);
@@ -74,6 +77,7 @@ switch(opt)
                         exit(0);
         }
     }
+    while(1);
     return (EXIT_SUCCESS);
 }
 
